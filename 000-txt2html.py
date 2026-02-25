@@ -10,9 +10,9 @@ from odf import text,teletype
 '''
 delete RCLF
 '''
-EPUB = 1
-EXTRACT = 0
-INDEX= 0 # build index of html -trad files
+SELECT= "EXTRACT"
+SELECT= "EPUB"
+SELECT= "INDEX" # build index of html -trad files
 
 def is_ascii(char):
   return ord(char) < 128
@@ -182,7 +182,7 @@ def export_odt_properly(odt_path, output_txt):
     f.write('\n\n'.join(output_lines))
   print(f"Done! Processed {len(output_lines)} elements.")
 
-if EPUB :
+if SELECT=="EPUB" :
   directory = Path.cwd()
   for odt in sorted(directory.glob("*.odt")):
     if not odt.stem.endswith("-trad"): continue
@@ -249,7 +249,7 @@ if EPUB :
     #if input("stop ?")=='y': sys.exit()
   sys.exit()
 
-if EXTRACT:
+if SELECT=="EXTRACT":
   textdoc = load("Arishima-Takeo---Oyako--trad.odt")
   fo= open('001.txt','w')
   # Extract all paragraphs
@@ -270,7 +270,7 @@ if EXTRACT:
   # sys.exit()
 
 
-if INDEX:  # build index of html -trad files
+if SELECT=="INDEX":  # build index of html -trad files
   word1='<title>'
   word2='</title>'
   fo= open('00-wrk.html','w')

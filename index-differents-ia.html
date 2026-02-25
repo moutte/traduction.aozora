@@ -47,16 +47,25 @@
     border: 3px solid blue; }
 </style>
 
-<title>les différents outils IA utilisés</title>
+<title>traduction assistée par IA</title>
 </head>
 <body>
+<h1>traduction assistée par ordinateur</h1>
+<p>Les textes d’Aozora étant disponibles directement sous forme numérique et lisibles sur un navigateur, les dictionnaires en ligne comme <i>rikai-chan</i> facilitaient déjà la lecture des <i>kanjis</i> (il y a souvent des <i>kanji</i> “à l’ancienne” dans les textes d’avant 1945). 
+</p><p>Ensuite sont apparus des outils comme <i>deepL</i> ou <i>google</i> <i>translate</i> qui permettaient d’avoir rapidement une traduction très approximative, mais c’est surtout la facilité d’accès, depuis 2024, à des outils d’IA performants de type <i>large</i> <i>language</i> <i>models</i> qui a changé les conditions de traduction. 
+</p><p>Tout se passe comme si les outils comme Google Translate traduisent phrase par phrase, sans “comprendre” le sens, tandis qu’un LLM gère la cohérence de l’ensemble du texte qu’il traduit. En conséquence, une traduction par LLM demande beaucoup moins de réécriture. </p>
+<!-- 
+<p>Par exemple, pour traduire <i>l’homme-fauteuil,</i> une nouvelle d’Edogawa, dont la langue est assez simple, j’avais mis en 1980 un mois avec des dictionnaires papier, mais on pourrait probablement le faire en trois ou quatre jours avec l’aide de <i>deepseek</i> ou <i>gemini.</i> </p>
+-->
 <h1>les différents outils IA utilisés</h1>
-<h2>Gemini Deepseek Perplexity</h2>
-<p>Sans faire d’inventaire préalable de tous les outils disponibles, j’ai essayé, en mode non payant,  quelques uns des outils IA généralistes les plus connus : <b>Gemini</b> (alphabet), <b>ChatGPT,</b> <b>Deepseek,</b> <b>Mistral</b> <b>AI,</b> <b>Claude</b> (Anthropic), <b>Perplexity.</b> </p>
-<p>Je me suis ensuite limité à ceux qui m’ont paru les plus efficaces: <b>Gemini,</b> <b>Deepseek,</b> et plus récemment  <b>Perplexity.</b> </p>
+<h2>Gemini Deepseek Perplexity Qwen</h2>
+<p>Sans faire d’inventaire préalable de tous les outils disponibles, j’ai essayé, en mode non payant,  quelques uns des outils IA généralistes les plus connus : <b>Gemini</b> (alphabet), <b>ChatGPT,</b> <b>Deepseek,</b> <b>Mistral</b> <b>AI,</b> <b>Claude</b> (Anthropic), <b>Perplexity</b>, <b>Qwen</b> (alibaba).</p>
+<p>Je me suis ensuite limité à ceux qui m’ont paru les plus efficaces: <b>Gemini,</b> <b>Deepseek,</b> et plus récemment <b>Perplexity</b>, et plus récemment encore <b>Qwen</b>. </p>
 <p><b>ChatGPT</b> ne fait pas de grosses erreurs, mais a tendance à broder, rajouter des nuances, etc. </p>
 <p>Il semble que <b>Perplexity,</b> basé en partie sur ChatGPT (il fait appel aussi à Claude et à Mistral), n’a pas ce défaut. En plus de la traduction, il fait de la recherche sur le web à propos du texte à traduire et il cite les principales sources qu’il a trouvées, parmi lesquelles parfois le texte d’Aozora lui-même. </p>
 <p><b>Gemini</b> est plus fidèle au texte que ChatGPT, mais le résultat est plutôt mot-à-mot.  Gemini répond rapidement, on peut donc produire assez vite une première version d’un texte, bien qu’il lui arrive de ne pas bien analyser certaines constructions “à tiroir”. </p>
 <p><b>Deepseek</b> est aussi fiable, n’invente pas, et donne un résultat littérairement plus travaillé que Gemini. Il a l’avantage de commenter ses choix de traduction et de style, et il paraît rechercher à quel  genre de littérature se rattache le texte à traduire. Parfois, quand il pense en avoir trouvé l’auteur, il se trompe mais pas tant que ça: il prend du Sakaguchi pour du Dazai (deux écrivains assez proches), ou du Shimaki dans sa période prolétarienne pour du Kobayashi Takiji, écrivain typique de la littérature prolétarienne. Mais Deepseek a deux défauts: il n’est pas toujours accessible (ses serveurs sont peut-être saturés), et il refuse de traduire certains textes, quand il les considère trop violents (par exemple des passages de textes de Yumeno de la veine “ero-guro”) ou trop politiques (les conflits sino-japonais sont parfois en arrière-plan dans les textes de 1930-1940). </p>
+<p><b>Qwen3</b>, de Alibaba Cloud, est aussi efficace que Deepseek, et a l'avantage d'être plus accessible. C'est ce modèle, plutôt que Deepseek, que j'utilise actuellement, en concurrence avec Gemini. Qwen est beaucoup plus lent que Gemini et fait plus souvent des erreurs de compréhension du texte, mais produit un texte plus "liitéraire", moins mot-à-mot. </p>
+<p>De manière générale, il est préférable d'utiliser au moins deux LLM pour traduire un texte.</p>
 </body>
 </html>
